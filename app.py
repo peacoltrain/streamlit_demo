@@ -15,8 +15,13 @@ def main():
 
     st.dataframe(df.head(5))
 
-    sL, sW, pL, pW = st.tabs(['Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width'])
+    S, P = st.tabs(['Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width'])
 
+    with S:
+        st.scatter_chart(data=df, x='SepalLengthCM', y='SepalWidthCM')
+
+    with P:
+        st.scatter_chart(data=df, x='PetalLengthCM', y='PetalWidthCM')
 
 if __name__ == "__main__":
     main()
