@@ -18,10 +18,10 @@ def main():
     S, P = st.tabs(['Sepal', 'Petal'])
 
     with S:
-        st.scatter_chart(data=df, x='SepalLengthCM', y='SepalWidthCM')
+        st.scatter_chart(data=df, x='SepalLengthCm', y='SepalWidthCm')
 
     with P:
-        st.scatter_chart(data=df, x='PetalLengthCM', y='PetalWidthCM')
+        st.scatter_chart(data=df, x='PetalLengthCm', y='PetalWidthCm')
 
 if __name__ == "__main__":
     main()
