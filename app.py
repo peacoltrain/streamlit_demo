@@ -13,7 +13,9 @@ def main():
 
     df = pd.read_csv("Iris.csv")
 
-    st.dataframe(df.head(10))
+    st.dataframe(df.head(5))
+
+    sL, sW, pL, pW = st.tabs(['Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width'])
 
 
 if __name__ == "__main__":
